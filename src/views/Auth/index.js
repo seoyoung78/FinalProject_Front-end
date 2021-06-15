@@ -1,6 +1,8 @@
+import style from "./style.module.css"
+
 function Auth(props) {
   return (
-    <div className="border p-3">
+    <div className={`${style.Auth} border d-flex justify-content-center`}>
       <form>
         <div className="form-group row">
           <label className="col-sm-3 col-form-label">회원 코드: </label>
