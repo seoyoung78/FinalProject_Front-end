@@ -1,0 +1,49 @@
+.header{
+  height: 110px;
+  font-family: 'GmarketSansMedium', sans-serif!important;
+}
+.header1{
+  /* display: flex; */
+  height: 60px;
+  background-color: #00AAF0;
+  /* flex-direction: row; */
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.header2{
+  height: 50px;
+  background-color: #2D3040;
+  color: white;
+  align-items: center;
+  padding-left: 30px;
+}
+.header1_1{
+  /* display: flex;
+  flex-grow: 1; */
+}
+.header1_2{
+  display: flex;
+  flex-grow: 3;
+  color: white;
+}
+.logo{
+  color:white;
+  font-size: x-large;
+  text-align: center;
+}
+
+/* 폰트 설정 - 본문 : 나눔스퀘어 */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css); 
+ 
+/* 폰트 설정 - 헤더 & 메뉴 : G마켓 */
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'NanumSquare', sans-serif;
+}
