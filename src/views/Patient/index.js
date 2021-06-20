@@ -1,28 +1,47 @@
+import { PatientContextProvider } from "./PatientContext";
 import PatientCreateForm from "./PatientCreateForm";
 import PatientList from "./PatientList";
 import PatientUpdateForm from "./PatientUpdateForm";
-import style from "./style.module.css";
+import "./Patient.css";
+import { useState } from "react";
 
 function Patient(props) {
-  return (
-    <div className="row">
-      {/* 좌측 */}
-      <div className={style.left}>
-        {/* 환자 목록 */}
-        <PatientList />
-      </div>
+  // 환자 코드 상태
+  const [patientId, setPatientId] = useState("");
 
-      {/* 우측 */}
-      <div className={style.right}>
-        <div>
-          {/* 환자 정보 수정 */}
-          <PatientUpdateForm />
+  // 검색 상태
+  const [keyword, setKeyword] = useState("");
+  
+  function changeId(id) {
+    setPatientId(id);
+  };
+
+  function search(keyword) {
+    setKeyword(keyword);
+    console.log("keyword출력:", keyword);
+  };
+
+  return (
+    <div className={`row no-gutters Patient`}>
+      <PatientContextProvider>
+        {/* 좌측 */}
+        <div className="left">
+          {/* 환자 목록 */}
+          <PatientList patientId={patientId} changeId={(id) => changeId(id)} search={(keyword) => search(keyword)}/>
         </div>
-        <div>
-          {/* 환자 등록 */}
-          <PatientCreateForm />
+
+        {/* 우측 */}
+        <div className="right">
+          <div className="right1">
+            {/* 환자 정보 수정 */}
+            <PatientUpdateForm patientId={patientId}/>
+          </div>
+          <div className="right2">
+            {/* 환자 등록 */}
+            <PatientCreateForm />
+          </div>
         </div>
-      </div>
+      </PatientContextProvider>
     </div>
   );
 }

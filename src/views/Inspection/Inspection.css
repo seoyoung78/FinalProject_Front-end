@@ -1,0 +1,224 @@
+.Inspection{
+  /* padding: 1%; */
+  margin: 1%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  /* background-color: lightpink; */
+}
+.Inspection_1{
+  width: 30%;
+  /* background-color: magenta; */
+  height: 100%;
+}
+.Inspection_2{
+  width: 55%;
+}
+.Inspection_3{
+  width: 15%;
+}
+.Inspection_3_1{
+  height:47%;
+}
+.Inspection_3_2{
+  height:48%;
+}
+
+/* InspectionPatientList */
+.InspectionPatientList{
+  padding-right: 10px;
+  /* height: 100%; */
+  /* background-color: lightgreen; */
+}
+.InspectionPatientList_title{
+  font-size: larger;
+  font-weight: bold;
+}
+.InspectionPatientList_1{
+  /* border: 1px solid black; */
+  padding-top: 10px;
+  padding: 10px;
+  /* height: 100%; */
+}
+.InspectionPatientList_1_1{
+  display: flex;
+  flex-direction: row;
+}
+.InspectionPatientList_1_2{
+  width: 10px;
+}
+.InspectionPatientList_1_3_1{
+  margin-right: 6px;
+  color: #009900;
+}
+.InspectionPatientList_1_3_2{
+  margin-right: 6px;
+  color: #ff6600;
+}
+.InspectionPatientList_1_3_3{
+  margin-right: 6px;
+  color: #00AAF0;
+}
+.InspectionPatientList_2_1{
+  text-align: center;
+  font-size: small;
+  
+}
+.InspectionPatientList_2_2{
+  background-color: lightgray;
+  position:sticky;
+  top:-1px;
+}
+.InspectionPatientList_list{
+  overflow-y: auto;
+  height: 600px;
+}
+
+/* InspectionList */
+.InspectionList{
+  padding-right: 10px;
+}
+.InspectionList_title{
+  font-size: larger;
+  font-weight: bold;
+}
+.InspectionList_1{
+  /* border: 1px solid black; */
+  /* padding-top: 10px; */
+  padding: 10px;
+}
+.InspectionList_1_1{
+  display: flex;
+  /* margin-left: 10px; */
+  justify-content: flex-end;
+}
+.InspectionList_1_2{
+  /* margin-right: 10px; */
+  margin-bottom: 10px;
+}
+.InspectionList_2_1{
+  text-align: center;
+  font-size: small;
+  height: 100%;
+}
+.InspectionList_2_2{
+  background-color: lightgray;
+  position:sticky;
+  top:-1px;
+}
+.InspectionList_list{
+  overflow-y: auto;
+  height: 600px;
+}
+
+/* InspectionCreateForm */
+.InspectionCreateForm{
+  height: 100%;
+}
+.InspectionCreateForm_title{
+  font-size: larger;
+  font-weight: bold;
+}
+.InspectionCreateForm_1{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  padding: 10px;
+  justify-content: center;
+  height: 90%;
+}
+.InspectionCreateForm_1_1{
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: small;
+}
+.InspectionCreateForm_1_2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* InspectionImgCreateForm */
+.InspectionImgCreateForm{
+  height: 100%;
+}
+.InspectionImgCreateForm_title{
+  font-size: larger;
+  font-weight: bold;
+}
+.InspectionImgCreateForm_1{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  padding: 10px;
+  justify-content: center;
+  height: 90%;
+}
+.InspectionImgCreateForm_1_1{
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: small;
+}
+.InspectionImgCreateForm_1_1_1{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  /* margin-right: 50px; */
+  margin-left: -15px;
+  font-size: small;
+}
+.InspectionImgCreateForm_1_2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* InspectionImgForm */
+.InspectionImgForm{
+  height: 100%;
+}
+.InspectionImgForm_title{
+  font-size: larger;
+  font-weight: bold;
+}
+.InspectionImgForm_1{
+  /* border: 1px solid black; */
+  padding: 10px;
+  height: 100%;
+}
+
+/* InspectionBarcodePop */
+.InspectionBarcodePop{
+  margin: 20px;
+}
+.InspectionBarcodePop_1{
+  border: 1px solid black;
+  padding: 10px;
+  height: 100%;
+}
+.InspectionBarcodePop_1_1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  height: 40%;
+  margin-bottom: 10px;
+}
+.InspectionBarcodePop_1_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.InspectionBarcodePop_1_3{
+  display: flex;
+  justify-content: center;
+}
